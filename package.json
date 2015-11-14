@@ -1,0 +1,12 @@
+{
+  "name": "noop",
+  "description": "noop function",
+  "repository": "git://github.com/micro-js/noop.git",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.x"
+  }
+}
