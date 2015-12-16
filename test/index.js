@@ -10,7 +10,7 @@ var test = require('tape')
  */
 
 test('should do nothing', function (t) {
-  t.equal(typeof fn, 'function');
-	t.equal(fn(), undefined);
+  t.equal(typeof noop, 'function');
+	t.equal(noop(), undefined);
   t.end()
 })
