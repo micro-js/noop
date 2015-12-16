@@ -1,4 +1,16 @@
+/**
+ * Imports
+ */
 
-var assert = require('assert');
+var noop = require('..')
+var test = require('tape')
 
-describe('noop', function(){});
+/**
+ * Tests
+ */
+
+test('should do nothing', function (t) {
+  t.equal(typeof fn, 'function');
+	t.equal(fn(), undefined);
+  t.end()
+})

@@ -1,18 +1,37 @@
-
 # noop
+
+[![Build status][travis-image]][travis-url]
+[![Git tag][git-image]][git-url]
+[![NPM version][npm-image]][npm-url]
+[![Code style][standard-image]][standard-url]
 
 noop function
 
 ## Installation
 
-    $ npm install noop
+    $ npm install @f/noop
+
+## Usage
+
+```js
+var noop = require('@f/noop')
+
+function foo (fn) {
+    fn = fn || noop;
+    return fn('bar');
+}
+foo();
+```
 
 ## License
 
-The MIT License
+MIT
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[travis-image]: https://img.shields.io/travis/micro-js/noop.svg?style=flat-square
+[travis-url]: https://travis-ci.org/micro-js/noop
+[git-image]: https://img.shields.io/github/tag/micro-js/noop.svg
+[git-url]: https://github.com/micro-js/noop
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
+[standard-url]: https://github.com/feross/standard
+[npm-image]: https://img.shields.io/npm/v/@f/noop.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/noop
